@@ -36,7 +36,7 @@ function addUser() {
       wrongSpan.classList.add("hidden");
       existsSpan.classList.add("hidden");
       setTimeout(() => {
-        window.open("index.html", "_self");
+        window.location.href = "../index.html";
       }, 1500);
     }
   }
@@ -74,7 +74,7 @@ function logUser() {
         timer: 1500
       });
       setTimeout(() => {
-        window.open("profile.html", "_self");
+        window.location.href = "./src/profile.html";
       }, 1500);
     } else {
       incorrectSpan.classList.remove("hidden")
